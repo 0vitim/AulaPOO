@@ -1,0 +1,174 @@
+// Questão 01
+public class Aula04 {
+public static void main(String[ ] args) {
+}
+}
+// Questão 02
+package Aula04;
+public class Ave {
+ String especie;
+ String nome;
+ String cor;
+ double peso;
+ double tamanho;
+void voar () {
+ System.out.println (“Eu sou um ” + especie + “ e eu posso voar.”);
+}
+void pousar () {
+ System.out.println (“Sou o ” + nome + “ e estou pousando.”);
+}
+void cacar () {
+ System.out.println (“Eu, ” + nome + “ vou caçar.”);
+}
+}
+// Questão 03
+package Aula04;
+public class Automovel {
+ String marca;
+ String modelo;
+ double cilindadaDoMotor;
+int totalDeRodas;
+ double tamanhoTanque;
+void acelerar () {
+ System.out.println (“O ” + modelo + “ está acelerando.”);
+}
+void parar () {
+ System.out.println (“O ” + marca + modelo + “ está parando.”);
+}
+void abastecer () {
+ System.out.println (“O, ” + modelo + “ está abastecendo.”);
+}
+void estacionar () {
+ System.out.println (“O, ” + modelo + “ está estacionando.”);
+}
+}
+
+// Questão 04
+package aula04;
+public class Pessoa {
+ String nome;
+ int idade;
+ String sexo;
+ String nacionalidade;
+ String naturalidade;
+ String estadoCivil;
+
+ void estudar () {
+ System.out.println ("A " + nome + " está estudando.");
+ }
+ void passear () {
+ System.out.println ("A " + nome + " irá passear.");
+ }
+ void casar () {
+ System.out.println ("A " + nome + " irá se casar.");
+}
+
+ void viajar () {
+ System.out.println ("A " + nome + " irá viajar em outubro.");
+ }
+ }
+ 
+ // Questão 05
+package aula04;
+public class Contato {
+ String nome;
+ String telefone;
+ String endereco;
+
+ void salvarContato () {
+ System.out.println ("O número " + telefone + " foi salvo.");
+ }
+
+ void mostrarContato () {
+ System.out.println ("O contato " + nome + " será mostrado na tela.");
+ }
+
+ void ligarParaContato () {
+ System.out.println ("Ligar para: " + telefone);
+ }
+}
+
+// Questão 06
+package aula04;
+public class Aula04 {
+public static void main(String[] args) {
+
+Ave ave1 = new Ave ();
+ Ave ave2 = new Ave ();
+
+ ave1.especie = "Falconisformes";
+ ave1.nome = "Gavião";
+ ave1.cor = "Cinza";
+ ave1.tamanho = 80;
+ ave1.peso = 1.1;
+
+ ave2.especie = "Ramphastos toco";
+ ave2.nome = "Tucano";
+ ave2.cor = "Preto e branco";
+ ave2.tamanho = 61;
+ ave2.peso = 620;
+
+ ave1.voar ();
+
+ ave2.pousar ();
+
+ ave1.cacar ();
+
+ Automovel aut1 = new Automovel ();
+ Automovel aut2 = new Automovel ();
+
+ aut1.marca = "Fiat";
+ aut1.modelo = "Toro";
+ aut1.cilindadaDoMotor = 1958;
+ aut1.totaldeRodas = 4;
+ aut1.tamanhoTanque = 60;
+
+ aut2.marca = "Honda";
+ aut2.modelo = "Civic";
+ aut2.cilindradaDoMotor = 1800;
+ aut2.totaldeRodas = 4;
+ aut2.tamanhoTanque = 56;
+
+ aut1.abastecer ();
+ aut2.acelerar ();
+ aut1.parar ();
+ aut2.estacionar ();
+
+ Pessoa pessoa1 = new Pessoa ();
+ Pessoa pessoa2 = new Pessoa ();
+
+ pessoa1.nome = "Eduarda";
+ pessoa1.idade = 20;
+ pessoa1.sexo = "Feminino";
+ pessoa1.nacionalidade = "Brasileira";
+ pessoa1.naturalidade = "Icoense";
+ pessoa1.estadoCivil = "Solteira";
+
+ pessoa2.nome = "Thays";
+ pessoa2.idade = 20;
+ pessoa2.sexo = "Feminino";
+ pessoa2.nacionalidade = "Brasileira";
+ pessoa2.naturalidade = "Icoense";
+ pessoa2.estadoCivil = "Solteira";
+
+ pessoa1.estudar ();
+ pessoa2.viajar ();
+ pessoa2.passear ();
+ pessoa1.casar ();
+
+ Contato cont1 = new Contato ();
+ Contato cont2 = new Contato ();
+
+ cont1.nome = "Lana";
+ cont1.telefone = "101010";
+ cont1.endereco = "Cedro";
+
+ cont2.nome = "Rosé";
+ cont2.telefone = "981018642";
+ cont2.endereco = "Busan";
+
+ cont1.salvarContato ();
+ cont2.mostrarContato ();
+ cont1.ligarParaContato ();
+ }
+}
